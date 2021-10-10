@@ -1,0 +1,247 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #524343;
+}
+
+.header {
+  display: block;
+}
+.header__nav {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #a2d0e2;
+}
+.header__nav__bar {
+  display: flex;
+  padding: 0 12px;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+hr {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border: 3px solid;
+  color: #a2d0e2;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.header__nav__bar a {
+  color: #241d1d;
+  padding: 15px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: royalblue;
+}
+
+.header .logo {
+  width: auto;
+  height: auto;
+  margin: 20px;
+}
+
+.img-logo {
+  display: flex;
+  float: right;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.header__section {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+}
+.header__section__article {
+  justify-content: left;
+  font-size: 1.3rem;
+}
+
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+.main__section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main__section__article {
+  text-align: left;
+  border: 2px solid #a2d0e2;
+  padding: 50px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.main__section__article h3 {
+  font-size: 30px;
+}
+.main__section__article p {
+  font-size: 22px;
+}
+
+.btn {
+  background-color: #ddd;
+  border: 2px solid #a2d0e2;
+  color: black;
+  padding: 17px 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #a2d0e2;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  padding: 30px;
+  font-size: 2rem;
+}
+
+.tech__icon {
+  min-height: 160px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 3px solid #a2d0e2;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  justify-content: space-evenly;
+}
+.tech__icon li {
+  border: 2px solid #a2d0e2;
+  border-radius: 5px;
+  padding: 10px 25px;
+  margin: 5px;
+  font-size: 60px;
+}
+
+.main__section2 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 20px 40px;
+  margin: 10px;
+  border: 3px solid #a2d0e2;
+  border-radius: 10px;
+}
+.main__section2 img {
+  height: 300px;
+  width: 400px;
+  display: flex;
+  border: 3px solid #a2d0e2;
+  border-radius: 20px;
+}
+.main__section2 h3 {
+  font-size: 25px;
+  margin-top: 10px;
+}
+.main__section2 p {
+  font-size: 20px;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.main__section2__article {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 30px;
+}
+
+footer {
+  display: block;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+footer section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+footer section form {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 30%;
+  align-items: left;
+  justify-content: space-evenly;
+  border: 3px solid #a2d0e2;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 20px;
+  padding-top: 40px;
+}
+footer section form input {
+  height: 40px;
+  border: 3px solid #a2d0e2;
+  border-radius: 10px;
+}
+footer section form textarea {
+  border: 3px solid #a2d0e2;
+  border-radius: 10px;
+}
+footer section form .btn {
+  margin-right: 100px;
+  height: auto;
+  width: 130px;
+  align-items: center;
+  text-align: center;
+}
+footer article {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  color: #439ec2;
+  flex-direction: row;
+  height: 80px;
+  width: auto;
+  align-items: center;
+  border: 3px solid #a2d0e2;
+  border-radius: 10px;
+  font-size: 25px;
+}
+footer article a {
+  color: #439ec2;
+  margin: 10px;
+}
+footer article i {
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
