@@ -1,10 +1,102 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+#right-moon {
+  animation: moon 1s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+  opacity: 1000px;
+}
+
+@keyframes moon {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+#night-shadow {
+  animation: shadow 1s ease-in-out infinite alternate;
+  will-change: transform;
+  transform-origin: center;
+  transform-box: fill-box;
+  transform-origin: bottom;
+  opacity: 1000px;
+}
+
+@keyframes shadow {
+  from {
+    transform: scale(1, 0.9);
+  }
+  to {
+    transform: scale(1.1, 1.1);
+  }
+}
+#min-fire {
+  animation: fire 3s infinite linear;
+  transform-origin: bottom;
+  transform: scale(1.2, 1.2);
+}
+
+@keyframes fire {
+  from {
+    transform: scale(1, 1.5);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+#right-moon {
+  animation: moon 1s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+  opacity: 1000px;
+}
+
+@keyframes moon {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+#night-shadow {
+  animation: shadow 1s ease-in-out infinite alternate;
+  will-change: transform;
+  transform-origin: center;
+  transform-box: fill-box;
+  transform-origin: bottom;
+  opacity: 1000px;
+}
+
+@keyframes shadow {
+  from {
+    transform: scale(1, 0.9);
+  }
+  to {
+    transform: scale(1.1, 1.1);
+  }
+}
+#min-fire {
+  animation: fire 3s infinite linear;
+  transform-origin: bottom;
+  transform: scale(1.2, 1.2);
+}
+
+@keyframes fire {
+  from {
+    transform: scale(1, 1.5);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: auto;
 }
 
 body {
@@ -18,6 +110,7 @@ body {
 }
 .header__nav {
   height: 5rem;
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,10 +128,11 @@ body {
 }
 
 hr {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   border: 3px solid;
   color: #a2d0e2;
+  align-items: center;
 }
 
 li {
@@ -69,15 +163,21 @@ a:hover {
   width: auto;
   height: auto;
   display: block;
+  margin-top: 120px;
 }
 
 .arrow {
   display: flex;
   justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .header__section {
-  height: 80vh;
+  height: 70vh;
+  width: auto;
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
@@ -197,7 +297,7 @@ footer section {
 footer section form {
   display: flex;
   flex-direction: column;
-  height: 70%;
+  height: 80%;
   width: 30%;
   align-items: left;
   justify-content: space-evenly;
@@ -231,6 +331,7 @@ footer article {
   flex-direction: row;
   height: 80px;
   width: auto;
+  margin-bottom: 0;
   align-items: center;
   border: 3px solid #a2d0e2;
   border-radius: 10px;
@@ -242,6 +343,52 @@ footer article a {
 }
 footer article i {
   justify-content: center;
+}
+
+#right-moon {
+  animation: moon 1s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+  opacity: 1000px;
+}
+
+@keyframes moon {
+  from {
+    transform: rotateZ(180deg);
+  }
+  to {
+    transform: rotateX(180deg);
+  }
+}
+#night-shadow {
+  animation: shadow 1s ease-in-out infinite alternate;
+  will-change: transform;
+  transform-origin: center;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+@keyframes shadow {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+#min-fire {
+  animation: fire 1s infinite linear;
+  transform-origin: bottom;
+  transform: scale(1.2, 1.2);
+}
+
+@keyframes fire {
+  from {
+    transform: scale(1, 1.5);
+  }
+  to {
+    transform: scale(1, 1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
