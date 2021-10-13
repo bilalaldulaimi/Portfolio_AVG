@@ -1,98 +1,6 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
-#right-moon {
-  animation: moon 1s infinite linear;
-  transform-origin: center;
-  transform-box: fill-box;
-  opacity: 1000px;
-}
-
-@keyframes moon {
-  from {
-    transform: rotateX(0deg);
-  }
-  to {
-    transform: rotateY(180deg);
-  }
-}
-#night-shadow {
-  animation: shadow 1s ease-in-out infinite alternate;
-  will-change: transform;
-  transform-origin: center;
-  transform-box: fill-box;
-  transform-origin: bottom;
-  opacity: 1000px;
-}
-
-@keyframes shadow {
-  from {
-    transform: scale(1, 0.9);
-  }
-  to {
-    transform: scale(1.1, 1.1);
-  }
-}
-#min-fire {
-  animation: fire 3s infinite linear;
-  transform-origin: bottom;
-  transform: scale(1.2, 1.2);
-}
-
-@keyframes fire {
-  from {
-    transform: scale(1, 1.5);
-  }
-  to {
-    transform: scale(1, 1);
-  }
-}
-#right-moon {
-  animation: moon 1s infinite linear;
-  transform-origin: center;
-  transform-box: fill-box;
-  opacity: 1000px;
-}
-
-@keyframes moon {
-  from {
-    transform: rotateX(0deg);
-  }
-  to {
-    transform: rotateY(180deg);
-  }
-}
-#night-shadow {
-  animation: shadow 1s ease-in-out infinite alternate;
-  will-change: transform;
-  transform-origin: center;
-  transform-box: fill-box;
-  transform-origin: bottom;
-  opacity: 1000px;
-}
-
-@keyframes shadow {
-  from {
-    transform: scale(1, 0.9);
-  }
-  to {
-    transform: scale(1.1, 1.1);
-  }
-}
-#min-fire {
-  animation: fire 3s infinite linear;
-  transform-origin: bottom;
-  transform: scale(1.2, 1.2);
-}
-
-@keyframes fire {
-  from {
-    transform: scale(1, 1.5);
-  }
-  to {
-    transform: scale(1, 1);
-  }
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -160,9 +68,8 @@ a:hover {
 .img-logo {
   display: flex;
   float: right;
-  width: auto;
+  max-width: 100%;
   height: auto;
-  display: block;
   margin-top: 120px;
 }
 
@@ -190,7 +97,6 @@ a:hover {
 
 .main {
   width: 100%;
-  overflow: hidden;
 }
 .main__section {
   display: flex;
@@ -243,6 +149,7 @@ h2 {
   border-radius: 10px;
   margin-bottom: 50px;
   justify-content: space-evenly;
+  margin: 10px;
 }
 .tech__icon li {
   border: 2px solid #a2d0e2;
@@ -279,7 +186,7 @@ h2 {
   margin-bottom: 20px;
 }
 .main__section2__article {
-  display: flex;
+  display: block;
   justify-content: space-evenly;
   padding: 10px 30px;
 }
@@ -388,6 +295,152 @@ footer article i {
   }
   to {
     transform: scale(1, 1);
+  }
+}
+@media screen and (max-width: 520px) {
+  body {
+    margin: 10px;
+    padding: 10px;
+    font-size: 10px;
+    line-height: 1;
+    grid-template-columns: 4fr;
+    width: 100%;
+  }
+
+  .header__nav__bar {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .header__section h3 {
+    font-size: 1.5rem;
+    margin-top: -400px;
+    margin-bottom: 20px;
+  }
+
+  .header__section p {
+    font-size: 1rem;
+    margin-bottom: -2000px;
+    line-height: 1.5;
+  }
+
+  .arrow {
+    margin-top: -450px;
+  }
+
+  .img-logo {
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin: 10px;
+  }
+
+  .main {
+    height: auto;
+    width: 100%;
+  }
+
+  .main h2 {
+    font-size: 1.5rem;
+  }
+
+  .tech__icon {
+    font-size: 15px;
+    grid-template-columns: 2fr;
+  }
+
+  .main__section__article {
+    flex-direction: column;
+  }
+
+  .main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .main p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .article__aside img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .btn {
+    font-size: 1rem;
+  }
+
+  .article__aside p {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+  }
+
+  .article__aside h3 {
+    width: 100%;
+    height: auto;
+    font-size: 1.3rem;
+    margin-top: 40px;
+  }
+}
+.main__section2 {
+  flex-direction: column;
+  font-size: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.main__section2__article {
+  flex-direction: column;
+  font-size: 10px;
+  width: 100%;
+}
+
+.footer__section__form {
+  flex-direction: column;
+  width: 400px;
+  margin-bottom: -500px;
+}
+
+.footer__article {
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  font-size: 1.5rem;
+}
+
+.footer__article p {
+  font-size: 1.2rem;
+  margin: 20px;
+  text-align: center;
+}
+
+.footer .btn {
+  font-size: 1rem;
+  margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .main__section {
+    flex-direction: column;
+  }
+
+  .tech__icon {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main__section {
+    flex-direction: column;
   }
 }
 
