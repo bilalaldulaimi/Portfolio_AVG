@@ -1,9 +1,10 @@
 # Accessibility Assignment
+- Visit the app page by this link https://61e1fe2b20b5dc3d969085b6--affectionate-borg-f1b000.netlify.app/
 
-You need to create a tech blog website. Reference layout can be found here: [Figma design](https://www.figma.com/file/fyN3JrM4xQQJpD7TWwvmTg/frame?node-id=0%3A1)
+-You need to create a tech blog website. Reference layout can be found here: [Figma design](https://www.figma.com/file/fyN3JrM4xQQJpD7TWwvmTg/frame?node-id=0%3A1)
 
-You do not need to strictly follow the design, take it for reference only and you can be creative.
-All images can be put inside `assets/images`. There are already some images in there that you can use if you'd like or replace them with your own
+-You do not need to strictly follow the design, take it for reference only and you can be creative.
+-All images can be put inside `assets/images`. There are already some images in there that you can use if you'd like or replace them with your own
 
 Tips:
 
